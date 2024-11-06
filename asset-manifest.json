@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bhagath3007/Marvel-Trailers.git/static/css/main.a09e8925.css",
+    "main.js": "/Bhagath3007/Marvel-Trailers.git/static/js/main.b102a572.js",
+    "index.html": "/Bhagath3007/Marvel-Trailers.git/index.html",
+    "main.a09e8925.css.map": "/Bhagath3007/Marvel-Trailers.git/static/css/main.a09e8925.css.map",
+    "main.b102a572.js.map": "/Bhagath3007/Marvel-Trailers.git/static/js/main.b102a572.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a09e8925.css",
+    "static/js/main.b102a572.js"
+  ]
+}
