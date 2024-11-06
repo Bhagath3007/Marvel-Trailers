@@ -1,0 +1,259 @@
+ :root {
+    --card-height: 360px;
+    --card-width: 240px;
+  }
+  
+  .cards {
+    width: var(--card-width);
+    height: var(--card-height);
+    perspective: 1000px;
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .cards-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .cards:hover .cards-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .cards-front,
+  .cards-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cards-front {
+    background-color: #1f1f2e;
+  }
+  
+  .cards-back {
+    background-color: #ffffff;
+    color: #333333;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .cards__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+  }
+  
+  .cards:hover .cards__img {
+    transform: scale(1.05);
+  }
+  
+  .cards__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(31, 31, 46, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+    transform: translateY(100%);
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .cards:hover .cards__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .card__runtime {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card__rating {
+    background-color:red;
+    border-radius: 50%;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  
+  .card__description {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-top: 10px;
+    padding: 0 10px;
+    color: #ffffff;
+  }
+  
+  .youtube-icon {
+    font-size: 4em;
+    color: #ff0000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    z-index: 10;
+  }
+  
+  .cards:hover .youtube-icon {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  .youtube-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .youtube-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .flip-icon {
+    font-size: 2em;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #ffffff;
+    transition: transform 0.4s ease;
+  }
+  
+  .cards:hover .flip-icon {
+    transform: rotate(180deg);
+  }
+
+   
+   /* Mobile Responsiveness */
+@media (max-width: 768px) {
+  :root {
+      --card-width: 200px;
+      --card-height: 300px;
+  }
+
+  .cards {
+      width: var(--card-width);
+      height: var(--card-height);
+      margin: 10px;
+  }
+
+  .cards-inner {
+      transition: transform 0.6s ease-in-out;
+  }
+
+  .cards__img {
+      border-radius: 10px;
+  }
+
+  .card__title {
+      font-size: 1.2em;
+  }
+
+  .card__runtime {
+      font-size: 0.9em;
+  }
+
+  .card__rating {
+      width: 50px;
+      height: 35px;
+      font-size: 0.9em;
+  }
+
+  .card__description {
+      font-size: 0.8em;
+  }
+
+  .youtube-icon {
+      font-size: 3em;
+  }
+
+  .flip-icon {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+      --card-width: 180px;
+      --card-height: 250px;
+  }
+
+  .cards {
+      width: var(--card-width);
+      height: var(--card-height);
+  }
+
+  .cards__img {
+      border-radius: 8px;
+  }
+
+  .card__title {
+      font-size: 1.1em;
+  }
+
+  .card__runtime {
+      font-size: 0.85em;
+  }
+
+  .card__rating {
+      width: 45px;
+      height: 30px;
+      font-size: 0.8em;
+  }
+
+  .card__description {
+      font-size: 0.7em;
+  }
+
+  .youtube-icon {
+      font-size: 2.5em;
+  }
+
+  .flip-icon {
+      font-size: 1.3em;
+  }
+}

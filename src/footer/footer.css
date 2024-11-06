@@ -1,0 +1,186 @@
+/* src/Footer.css */
+.footer {
+    background-color: #1c1c1c; /* Dark background for Marvel theme */
+    color: #e8e8e8; /* Light grey text for better contrast */
+    padding: 1rem 0; /* Reduced padding to make it smaller */
+    font-size: 0.875rem; /* Slightly smaller text size */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #d32f2f; /* Red border to add a Marvel touch */
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .footer__left, .footer__center, .footer__right {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  
+  .footer__links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__links li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer__links a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-weight: 600; /* Bold links for visibility */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer__links a:hover {
+    color: #d32f2f; /* Red color on hover */
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center align social icons */
+  }
+  
+  .footer__social-icon {
+    color: #e8e8e8;
+    font-size: 1.75rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer__social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+    color: #d32f2f; /* Change color to red on hover */
+  }
+  
+  .footer__bottom {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: #b0b0b0; /* Slightly lighter grey for bottom text */
+  }
+  
+  .footer__bottom a {
+    color: #e8e8e8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer__bottom a:hover {
+    color: #d32f2f; /* Red color for the link in bottom section */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .footer__content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer__left, .footer__center, .footer__right {
+      flex: unset;
+      padding: 0.25rem;
+    }
+  
+    .footer__socials {
+      gap: 10px;
+    }
+  
+    .footer__social-icon {
+      font-size: 1.5rem;
+    }
+  }
+  /* Flowing Text for Marvel Movie Hub */
+.flowing-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px; /* Adds space between letters */
+    font-size: 2.5em; /* Adjusted font size */
+    font-weight: bold;
+    color: white;
+  }
+  
+  .flowing-text span {
+    opacity: 1;
+    animation: letterFlow 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.2s); /* Delay for each letter */
+  }
+  
+  @keyframes letterFlow {
+    0%, 100% {
+      color: white;
+    }
+    50% {
+      color: #d32f2f; /* Marvel Red */
+    }
+  }
+  
+  /* Assign incremental custom properties for each letter in 'Marvel Movie Hub' */
+  .flowing-text span:nth-child(1) { --i: 0; }
+  .flowing-text span:nth-child(2) { --i: 1; }
+  .flowing-text span:nth-child(3) { --i: 2; }
+  .flowing-text span:nth-child(4) { --i: 3; }
+  .flowing-text span:nth-child(5) { --i: 4; }
+  .flowing-text span:nth-child(6) { --i: 5; }
+  .flowing-text span:nth-child(7) { --i: 6; }
+  .flowing-text span:nth-child(8) { --i: 7; }
+  .flowing-text span:nth-child(9) { --i: 8; }
+  .flowing-text span:nth-child(10) { --i: 9; }
+  .flowing-text span:nth-child(11) { --i: 10; }
+  .flowing-text span:nth-child(12) { --i: 11; }
+  .flowing-text span:nth-child(13) { --i: 12; }
+  .flowing-text span:nth-child(14) { --i: 13; }
+  .flowing-text span:nth-child(15) { --i: 14; }
+  .flowing-text span:nth-child(16) { --i: 15; }
+  
+  /* Flowing Text for Copyrights */
+  .footer__bottom {
+    font-size: 1rem;
+    text-align: center;
+    color: #b0b0b0;
+  }
+  
+  .footer__bottom .flowing-copyright {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .footer__bottom .flowing-copyright span {
+    opacity: 1;
+    animation: letterFlow 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.2s); /* Delay for each letter */
+  }
+  
+  .footer__bottom .flowing-copyright span:nth-child(1) { --i: 0; }
+  .footer__bottom .flowing-copyright span:nth-child(2) { --i: 1; }
+  .footer__bottom .flowing-copyright span:nth-child(3) { --i: 2; }
+  .footer__bottom .flowing-copyright span:nth-child(4) { --i: 3; }
+  .footer__bottom .flowing-copyright span:nth-child(5) { --i: 4; }
+  .footer__bottom .flowing-copyright span:nth-child(6) { --i: 5; }
+  .footer__bottom .flowing-copyright span:nth-child(7) { --i: 6; }
+  .footer__bottom .flowing-copyright span:nth-child(8) { --i: 7; }
+  .footer__bottom .flowing-copyright span:nth-child(9) { --i: 8; }
+  .footer__bottom .flowing-copyright span:nth-child(10) { --i: 9; }
+  .footer__bottom .flowing-copyright span:nth-child(11) { --i: 10; }
+  .footer__bottom .flowing-copyright span:nth-child(12) { --i: 11; }
+  .footer__bottom .flowing-copyright span:nth-child(13) { --i: 12; }
+  .footer__bottom .flowing-copyright span:nth-child(14) { --i: 13; }
+  .footer__bottom .flowing-copyright span:nth-child(15) { --i: 14; }
+  .footer__bottom .flowing-copyright span:nth-child(16) { --i: 15; }
+  .footer__bottom .flowing-copyright span:nth-child(17) { --i: 16; }
+  .footer__bottom .flowing-copyright span:nth-child(18) { --i: 17; }
+  .footer__bottom .flowing-copyright span:nth-child(19) { --i: 18; }
+  .footer__bottom .flowing-copyright span:nth-child(20) { --i: 19; }
+  

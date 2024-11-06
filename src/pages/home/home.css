@@ -1,0 +1,119 @@
+.posterImage{
+    height: 600px;
+}
+
+.posterImage > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.posterImage__overlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s;
+}   
+
+.posterImage__overlay:hover {
+    opacity: 1;
+}
+
+.posterImage__title {
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterImage__runtime {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+    margin-left: 3rem;
+}
+
+.posterImage__description {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .posterImage {
+        height: 400px;  /* Reduced height for smaller screens */
+    }
+
+    .posterImage > img {
+        width: 100%;  /* Ensure the image takes full width */
+        height: auto;  /* Keep the image proportional */
+    }
+
+    .posterImage__overlay {
+        padding: 2rem;  /* Reduced padding for smaller screens */
+        bottom: 0;
+        height: 60%;  /* Adjust overlay height for smaller screens */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .posterImage__title {
+        font-size: 2.5rem;  /* Smaller font size for mobile */
+        margin-bottom: 0.4rem;
+    }
+
+    .posterImage__runtime {
+        font-size: 1.5rem;  /* Reduced font size */
+        margin-bottom: 0.8rem;
+    }
+
+    .posterImage__rating {
+        font-size: 1.2rem;  /* Slightly smaller font size for mobile */
+        margin-left: 0;  /* Adjust alignment for small screens */
+    }
+
+    .posterImage__description {
+        font-size: 0.9rem;  /* Smaller font size for description */
+        margin-bottom: 0.5rem;
+        width: 100%;  /* Allow description to take full width */
+        text-align: center;  /* Center align for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .posterImage {
+        height: 300px;  /* Further reduced height for very small screens */
+    }
+
+    .posterImage__title {
+        font-size: 2rem;  /* Further reduced font size */
+    }
+
+    .posterImage__runtime {
+        font-size: 1.3rem;  /* Even smaller font size */
+    }
+
+    .posterImage__description {
+        font-size: 0.8rem;  /* Further reduced font size */
+        text-align: center;  /* Keep description centered */
+    }
+
+    .posterImage__overlay {
+        padding: 1rem;  /* Reduced padding for very small screens */
+    }
+}

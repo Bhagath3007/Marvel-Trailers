@@ -1,0 +1,52 @@
+.movie__list {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.list__title {
+font-size: 1.75rem;
+margin:  2.5rem;
+}
+
+.list__cards {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .movie__list {
+        padding: 0 1rem 3rem 1rem;  /* Reduced padding for mobile */
+    }
+
+    .list__title {
+        font-size: 1.5rem;  /* Adjusted font size for smaller screens */
+        margin: 1.5rem 0;  /* Reduced margin for mobile */
+        text-align: center;  /* Center align title */
+    }
+
+    .list__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;  /* Distribute cards evenly on small screens */
+    }
+
+    .list__cards > div {  /* Adjust each card in the list */
+        width: 100%;  /* Make each card take full width on mobile */
+        margin-bottom: 1.5rem;  /* Space between cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .list__title {
+        font-size: 1.3rem;  /* Further reduced font size for very small screens */
+        margin: 1rem 0;  /* Less margin */
+    }
+
+    .movie__list {
+        padding: 0 0.5rem 3rem 0.5rem;  /* Further reduced padding */
+    }
+
+    .list__cards > div {
+        width: 100%;  /* Keep each card full-width */
+    }
+}
