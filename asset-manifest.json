@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Marvel-Trailers/static/css/main.a09e8925.css",
-    "main.js": "/Marvel-Trailers/static/js/main.b102a572.js",
-    "index.html": "/Marvel-Trailers/index.html",
-    "main.a09e8925.css.map": "/Marvel-Trailers/static/css/main.a09e8925.css.map",
-    "main.b102a572.js.map": "/Marvel-Trailers/static/js/main.b102a572.js.map"
+    "main.css": "/Marvel-Movie-Trailer/static/css/main.e63827a3.css",
+    "main.js": "/Marvel-Movie-Trailer/static/js/main.5ef1e970.js",
+    "index.html": "/Marvel-Movie-Trailer/index.html",
+    "main.e63827a3.css.map": "/Marvel-Movie-Trailer/static/css/main.e63827a3.css.map",
+    "main.5ef1e970.js.map": "/Marvel-Movie-Trailer/static/js/main.5ef1e970.js.map"
   },
   "entrypoints": [
-    "static/css/main.a09e8925.css",
-    "static/js/main.b102a572.js"
+    "static/css/main.e63827a3.css",
+    "static/js/main.5ef1e970.js"
   ]
 }
