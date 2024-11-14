@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
       <div className="footer__bottom">
         <div className="flowing-copyright">
-          {splitText("Gajarla Bhagath Chakravorthy")}
+        
         </div>
         <p>&copy; 2024 Gajarla Bhagath Chakravorthy. All rights reserved.</p>
       </div>

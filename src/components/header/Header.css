@@ -11,6 +11,7 @@
     position: sticky;
     top: 0;
     z-index: 2;
+    flex-wrap: wrap;
 }
 
 .headerLeft, .headerRight {
@@ -85,6 +86,7 @@ a > span:hover {
     background: none; /* Remove background */
     border: none; /* Remove any border */
 }
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .header {
@@ -92,6 +94,7 @@ a > span:hover {
         padding: 0.5rem 1rem;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .headerLeft, .headerRight {
@@ -134,6 +137,8 @@ a > span:hover {
     .header {
         margin: 0 0.5rem;
         padding: 0.4rem 0.8rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .headerLeft, .headerRight {

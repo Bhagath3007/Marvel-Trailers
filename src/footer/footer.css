@@ -98,50 +98,6 @@
     }
   }
   /* Flowing Text for Marvel Movie Hub */
-.flowing-text {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px; /* Adds space between letters */
-    font-size: 2.5em; /* Adjusted font size */
-    font-weight: bold;
-    color: white;
-  }
-  
-  .flowing-text span {
-    opacity: 1;
-    animation: letterFlow 1.5s ease-in-out infinite;
-    animation-delay: calc(var(--i) * 0.2s); /* Delay for each letter */
-  }
-  
-  @keyframes letterFlow {
-    0%, 100% {
-      color: white;
-    }
-    50% {
-      color: #d32f2f; /* Marvel Red */
-    }
-  }
-  
-  /* Assign incremental custom properties for each letter in 'Marvel Movie Hub' */
-  .flowing-text span:nth-child(1) { --i: 0; }
-  .flowing-text span:nth-child(2) { --i: 1; }
-  .flowing-text span:nth-child(3) { --i: 2; }
-  .flowing-text span:nth-child(4) { --i: 3; }
-  .flowing-text span:nth-child(5) { --i: 4; }
-  .flowing-text span:nth-child(6) { --i: 5; }
-  .flowing-text span:nth-child(7) { --i: 6; }
-  .flowing-text span:nth-child(8) { --i: 7; }
-  .flowing-text span:nth-child(9) { --i: 8; }
-  .flowing-text span:nth-child(10) { --i: 9; }
-  .flowing-text span:nth-child(11) { --i: 10; }
-  .flowing-text span:nth-child(12) { --i: 11; }
-  .flowing-text span:nth-child(13) { --i: 12; }
-  .flowing-text span:nth-child(14) { --i: 13; }
-  .flowing-text span:nth-child(15) { --i: 14; }
-  .flowing-text span:nth-child(16) { --i: 15; }
-  
-  /* Flowing Text for Copyrights */
   .footer__bottom {
     font-size: 1rem;
     text-align: center;

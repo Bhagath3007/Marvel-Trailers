@@ -101,7 +101,7 @@ const Movie = () => {
           <div>
             <h2>Official Trailer</h2>
             <iframe
-              width="560"
+              width="450"
               height="315"
               src={`https://www.youtube.com/embed/${trailerId}`}
               title="YouTube video player"
